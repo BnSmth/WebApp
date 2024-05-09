@@ -1,0 +1,43 @@
+### Get all customers
+GET http://localhost:8080/api/customer
+Accept: application/json
+
+### Create new customer (1)
+POST http://localhost:8080/api/customer
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Ben",
+  "lastName": "Smith",
+  "email": "ben@bensmith.io"
+}
+
+### Create new customer (2)
+POST http://localhost:8080/api/customer
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "EvilBen",
+  "lastName": "Smith",
+  "email": "evilben@bensmith.io"
+}
+
+### Get all customers again
+GET http://localhost:8080/api/customer
+Accept: application/json
+
+### Get customer
+GET http://localhost:8080/api/customer/1
+Accept: application/json
+
+### Get non-existant customer
+GET http://localhost:8080/api/customer/3
+Accept: application/json
+
+### Delete existing customer
+DELETE http://localhost:8080/api/customer/1
+
+### Delete non-existant customer
+DELETE http://localhost:8080/customer/api/3

@@ -1,0 +1,14 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - io.bensmith.ApplicationKt.main
+
+datasource:
+  host: $DATASOURCE_HOST
+  port: $DATASOURCE_PORT
+  database: $DATASOURCE_DATABASE
+  schema: $DATASOURCE_SCHEMA
+  username: $DATASOURCE_USERNAME
+  password: $DATASOURCE_PASSWORD
